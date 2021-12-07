@@ -5,9 +5,9 @@
   tasks:
 
   - name: install apache2 package
-    yum:
+    package:
       name: 
-        - "{{ httpd_package }}"
+        - "{{ apache_package }}"
         - "{{ php_package }}"
       state: latest
       update_cache: yes
